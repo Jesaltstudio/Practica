@@ -3,7 +3,7 @@ from telegram.ext import Updater, MessageHandler, Filters
 
 def process_message(update, context):
 
-    text = update.message.text('Hola Prro')
+    tupdate.message.reply_text('Hola Prro')
 
 
 
@@ -13,6 +13,7 @@ if __name__ == '__main__':
     updater = Updater(token=os.environ[1645409115:AAGv6oIHbC8UXJplaI7fIcc1R5QcacQeAJ0], use_context=True)
 
     dp = updater.dispatcher
+    dp.add_handler(CommandHandler('start', start))
     updater.start_polling()
 
 
